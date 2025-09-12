@@ -1,0 +1,81 @@
+^ → Match must start at the beginning of the string.
+
+\( → Match a literal (.
+
+Normally ( has a regex meaning (grouping), but \( escapes it to match the actual character.
+
+\d{3} → Match exactly 3 digits (0–9).
+
+\) → Match a literal ).
+
+(So far → matches something like (123))
+
+(space) → Match one space character.
+
+\d{3} → Match 3 digits again.
+
+- → Match a literal hyphen -.
+
+\d{4} → Match 4 digits.
+
+$ → Match must end at the end of the string.
+
+
+Character shortcuts
+
+\d → Any digit (0–9)
+
+\D → Any non-digit
+
+\w → Any word character ([A-Za-z0-9_])
+
+\W → Any non-word character
+
+\s → Any whitespace (space, tab, newline)
+
+\S → Any non-whitespace
+
+
+Position shortcuts
+
+^ → Start of string
+
+$ → End of string
+
+\b → Word boundary (e.g., "cat" in "black cat")
+
+\B → Non-word boundary
+
+Quantifier shortcuts
+
+* → Zero or more
+
++ → One or more
+
+? → Zero or one (optional)
+
+{n} → Exactly n times
+
+{n,} → At least n times
+
+{n,m} → Between n and m times
+
+Other handy ones
+
+. → Any character (except newline by default)
+
+| → OR (e.g., cat|dog)
+
+[] → Character class (e.g., [abc])
+
+[^] → Negated class (e.g., [^0-9] = not a digit)
+
+() → Grouping / capturing
+
+(?: ) → Non-capturing group
+
+(?P<name> ) → Named group
+
+(?= ) → Lookahead
+
+(?! ) → Negative lookahead
