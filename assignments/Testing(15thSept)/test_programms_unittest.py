@@ -25,4 +25,4 @@ class TestProgramms(unittest.TestCase):
         print("Area error message:", str(e.exception))  
 
 if __name__ == "__main__":
-    unittest.main(verbosity=2)
+    unittest.main()
